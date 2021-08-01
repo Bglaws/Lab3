@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lab 3.2 </title>
+    </head>
+    <body>
+        
+        <h1> Type Here </h1>
+
+        <input type = "text" id = "textBox" name = "userInput" value=""> 
+
+        <button type = "button" onClick = "wordCount()">Word Count</button>
+        <p id = "wordNum"></p>
+        <script>
+            function wordCount() {
+                var count = document.getElementById("textBox").value.split(" ").length;
+                document.getElementById("wordNum").innerText = count;
+            }
+        </script>            
+
+    </body>
+
+</html>
